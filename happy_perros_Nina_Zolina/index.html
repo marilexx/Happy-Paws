@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Enlace al archivo JS del mapa de OpenStreet Map-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>                   
+    <!--Enlace a la hoja de estilo del mapa de OpenStreet Map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pata.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Paws - Pet One Page HTML5 Theme</title>
+</head>
+
+<body>
+
+
+    <!-- * * BARRAS DE NAVEFACION * * -->
+
+
+
+
+
+    <header class="headerUno">
+
+        <div class="contenidoBannerUno">
+
+            <i class="bi bi-geo-alt-fill">
+                <p>Pet Street - Bergen,Norway</p>
+            </i>
+            <i class="bi bi-envelope-fill">
+                <p>petshop@site.com</p>
+            </i>
+            <i class="bi bi-telephone-fill">
+                <p>+1 (123) 456 7890</p>
+            </i>
+
+        </div>
+
+        <div class="contenidoBannerDos">
+
+            <div class="iconos_img"><img src="assets/facebook.png" alt="facebook"></div>
+            <div class="iconos_img"><img src="assets/twitter.png" alt="twitter"></div>
+            <div class="iconos_img"><img src="assets/google-plus.png" alt="google+"></div>
+            <div class="iconos_img"><img src="assets/linkedin.png" alt="linkedin"></div>
+            <div class="iconos_img"><img src="assets/flickr.png" alt="flickr"></div>
+            <div class="iconos_img"><img src="assets/tumblr.png" alt="tumblr"></div>
+            <div class="iconos_img"><img src="assets/instagram.png" alt="instagram"></div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <header class="headerDos" id="sticky-header">
+
+
+        <div class="logo">
+            <div class="imagen_logo"><img src="assets/logo16px.png" alt="logo_huella"></div>
+            <p class="nombre">happy paws</p>
+        </div>
+
+
+        <div class="headerDosSegundaParte">
+
+            <a href="#seccion1" class="boton">HOME</a>
+            <a href="#seccion2" class="boton">SERVICES</a>
+            <a href="#seccion4" class="boton">ABOUT</a>
+            <a href="#seccion6" class="boton">PRICES</a>
+            <a href="#seccionGalwery" class="boton">GALLERY</a>
+            <a href="#seccion8" class="boton">OFFERS</a>
+            <a href="#seccion9" class="boton">ADOPTION</a>
+            <a href="#seccion11" class="boton">CONTACT</a>
+
+        </div>
+
+        <div class="botonBurger"><img src="assets/menu.png" alt=""></div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section class="configuracionColor">
+            <div class="menuConfiguracion" id="menuConfiguracion">
+                <div class="menuConfig_texto">
+                    <p>Choose a Color Skin<p>
+                </div>
+                <div class="menuColor">
+                    <div class="color">
+                        <img src="assets/blue.png" alt="azul" id="azul">
+                    </div>
+                    <div class="color">
+                        <img src="assets/red.png" alt="rojo" id="rojo">
+                    </div>
+                    <div class="color">
+                        <img src="assets/green.png" alt="verde" id="verde">
+                    </div>
+                    <div class="color">
+                        <img src="assets/brown.png" alt="marron" id="marron">
+                    </div>
+                    <div class="color">
+                        <img src="assets/yellow.png" alt="amarillo" id="amarillo">
+                    </div>
+                </div>
+            </div>
+            <div class="iconoAjustes" id="iconoAjustes">
+                <img src="assets/configuraciones.png" class="icono_animado" alt="">
+            </div>
+
+        </section>
+
+        <!-- SLIDER -->
+        <!--BANNER 1-->
+        <section class="banner1_slider">
+            <div class="slider">
+                <div class="slider_inner" id="sliderInner">
+                    <img src="assets/slide1.webp" alt=""  class="slider_innerIMG" id="sliderInner__img">
+                    <img src="assets/slide2.webp" alt=""  class="slider_innerIMG" id="sliderInner__img">
+                    <img src="assets/slide3.webp" alt=""  class="slider_innerIMG" id="sliderInner__img">
+                    <img src="assets/slide4.webp" alt=""  class="slider_innerIMG" id="sliderInner__img">
+                </div>
+            </div>
+            <div class="capa_superpuesta">
+                <div class="contenido_capaSuperpuesta" id="contenidoCapaSuperpuesta">
+                    <div class="textos_slide">
+                        <h1 class="slide_h1" id="slideH1">welcome to happy paws</h1>
+                        <p class="slide_p" id="slideP">We offer all the best quality products and and services for your adorable pets.</p>
+                        <button class="slide_b" id="slideB">our services</button>
+
+                    </div>
+                    <div class="puntos_slide">
+                        <div class="circulo_externo" id="circulo1">
+                            <div class="circulo_interno"></div>
+                        </div>
+                        <div class="circulo_externo" id="circulo2">
+                            <div class="circulo_interno" ></div>
+                        </div>
+                        <div class="circulo_externo" id="circulo3">
+                            <div class="circulo_interno"></div>
+                        </div>
+                        <div class="circulo_externo" id="circulo4">
+                            <div class="circulo_interno"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- * * FIN SLIDER * * -->
+
+        <!-- * * BANNER 1: Nuestro servicios * * -->
+
+        <section id="seccion2">
+
+            <div class="bannerUno">
+
+                <div class="contenidoBannerServicios">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>OUR SERVICES</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bannerUnoContenedorFotos">
+
+                        <div class="bannerUnoContenido">
+    
+                            <div class="bannerUnoContenidoImg">
+                                <img src="assets/bannerUnoimg1.jpg" alt="">
+                            </div>
+                            <div class="bannerUnoContenidoTexto">
+                                <h4>Pet Health</h4>
+                                <p>We offer the most amazing services for your Pet's health and High quality professionals
+                                    ready
+                                    to take care of your best friend.</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="bannerUnoContenido">
+    
+                            <div class="bannerUnoContenidoImg">
+                                <img src="assets/bannerUnoimg2.jpg" alt="">
+                            </div>
+                            <div class="bannerUnoContenidoTexto">
+                                <h4>Pet Health</h4>
+                                <p>We offer the most amazing services for your Pet's health and High quality professionals
+                                    ready
+                                    to take care of your best friend.</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="bannerUnoContenido">
+    
+                            <div class="bannerUnoContenidoImg">
+                                <img src="assets/bannerUnoimg3.jpg" alt="">
+                            </div>
+                            <div class="bannerUnoContenidoTexto">
+                                <h4>Pet Health</h4>
+                                <p>We offer the most amazing services for your Pet's health and High quality professionals
+                                    ready
+                                    to take care of your best friend.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                
+
+                
+
+            </div>
+
+        </section>
+
+
+
+        <!-- * * FIN DEL BANNER 1: Nuestro servicios * * -->
+
+
+        <!-- * * BANNER 2:  Estadisticas * * -->
+
+        <section id="seccion3" class="seccionEstadistica">
+            <div class="bannerEstadistica">
+                <div class="contenidoBannerBrands">
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>OUR STATS</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER UNO -->
+                   
+
+                        <div class="estadisticas">
+
+                            <div class="contenedorEstadisticas">
+        
+                                <div class="contenedor">
+        
+                                    <h4 id="counterCostumers">0</h4>
+                                    <hr>
+        
+                                </div>
+        
+                                <div>
+                                    <p>Customers</p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="contenedorEstadisticas">
+        
+                                <div class="contenedor">
+        
+                                    <h4 id="counterProfessionals">0</h4>
+                                    <hr>
+        
+                                </div>
+        
+        
+                                <div>
+                                    <p>Professionals</p>
+                                    
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="contenedorEstadisticas">
+        
+                                <div class="contenedor">
+        
+                                    <h4 id="counterPetsHosted">0</h4>
+                                    <hr>
+        
+                                </div>
+        
+        
+                                <div>
+                                    <p>Pets Hosted</p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="contenedorEstadisticas">
+        
+                                <div class="contenedor">
+        
+                                    <h4 id="counterProducts">0</h4>
+                                    <hr>
+        
+                                </div>
+        
+                                <div>
+                                    <p>Products</p>
+                                </div>
+        
+        
+                            </div>
+        
+                        </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+      
+
+
+
+        <!-- * * BANNER 3:  Sobre Nosotros * * -->
+
+
+        <secion id="seccion4">
+
+            <div class="bannertres">
+
+                <div class="bannerSobreNosotros">
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>ABOUT US</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedoresBotonesBannerTres">
+
+                        <div data-slide="0">
+                            <p>OUR CLINIC</p>
+                        </div>
+                        <div data-slide="1">
+                            <p>OUR PHILOSOPHY</p>
+                        </div>
+                        <div data-slide="2">
+                            <p>OUR THEME</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="cajaBlancaBannerTres">
+
+                        <div class="sliderSobreNosotros">
+
+                            <div class="sliderInnerSobreNosotros">
+
+
+                                <div class="sliderSobreNosotrosUno">
+
+                                    <div class="cajaBlancaBannerTresDescripcion">
+
+                                        <div class="descripcion">
+
+                                            <h3>We take cara pg yout best friend</h3>
+                                            <p>Interdum donec eget metus auguen unc vel mauris ultricies, vest ao ibulum
+                                                orci eget,
+                                                blandit
+                                                quam elit, eu imperdiet neque semper lorem ipsum dolores viverra elit
+                                                Aliquam erat
+                                                volutpat
+                                                phase llus ac sodales felis tiam non metus aliquam eros accumsan mollis
+                                                eget vitae
+                                                tellusm.
+                                                Sed in lobortis nisl Phasellus ultrices gravida massa luctus ornare.
+                                                Aliquam erat
+                                                volutpat
+                                                phas ellus sodales felis tiam non metus aliquam eros accumsan mollis
+                                                eget vitae
+                                                tellusm
+                                                Pellentesque turpis lectus, placerat a ultricies a, posuere lorem
+                                                ipsuet.</p>
+
+                                        </div>
+
+                                        <div><img class="coballas" src="https://www.ingridkuhn.com/themes/happypaws/img/about.png"
+                                                alt=""></div>
+
+
+                                    </div>
+
+                                    <div class="cajaBlancaBannerTresIconos">
+
+                                        <div class="iconosBannerSobreNosotros">
+
+                                            <div class="fila">
+
+                                                <div><img src="assets/iconHomePets_64px.png" alt=""></div>
+
+                                            </div>
+
+                                            <h5>High Tech Clinic</h5>
+                                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum
+                                                dolores.</p>
+
+                                        </div>
+
+                                        <div class="iconosBannerSobreNosotros">
+
+                                            <div class="fila">
+
+                                                <div><img src="assets/iconHumanDog_64px.png" alt=""></div>
+
+                                            </div>
+
+                                            <h5>Amazing Support</h5>
+                                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum
+                                                dolores.</p>
+
+                                        </div>
+
+                                        <div class="iconosBannerSobreNosotros">
+
+                                            <div class="fila">
+
+                                                <div><img src="assets/medal_64px.png" alt=""></div>
+
+                                            </div>
+
+                                            <h5>Award Winner</h5>
+                                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum
+                                                dolores.</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SLIDER DOS DEL BANNER SOBRE NOSOTROS -->
+
+                                <div class="sliderSobreNosotrosDos">
+
+                                    <div class="cajaBlancaBannerTresDescripcion">
+
+                                        <div class="descripcion">
+
+                                            <h3>Our Philosophy</h3>
+                                            <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh
+                                                imperdiet interdum. Sed in lobortis nisl Phasellus ultrices gravida
+                                                massa luctus ornare ellen tesque turpis lectus, placerat a ultricies a,
+                                                posuere a nibh fusce mollis imperdiet interdum donec eget metus auguen
+                                                unc vel mauris ultricies, vestibulum orci eget, viverra elit. Aliquam
+                                                erat volutpat. Phasellus ac sodales felis tiam non metus aliquam eros
+                                                accumsan mollis eget vitae tellusm.</p>
+
+                                        </div>
+
+                                        <div>
+
+                                            <iframe width="560" height="315" src="https://youtu.be/deN3nt3Sdhc"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="sliderSobreNosotrosTres">
+
+                                    <h3>Meet our Team</h3>
+
+                                    <div class="contenidoEspecialistas">
+
+                                        <div class="especialista">
+                                            <div class="imagenEspecialista"><img src="assets/team1.jpg" alt=""></div>
+                                            <h5>Luane Silva</h5>
+                                            <p class="especialistap">Veterinarian</p>
+                                            <p class="descripcionEspecialista">Pellentesque turpis lectus, placerat a
+                                                ultricies a, posuere a nibh imperdiet interdum.</p>
+                                            <div class="redesEspecialistas">
+                                                <i class="bi bi-twitter"></i>
+                                                <i class="bi bi-facebook"></i>
+                                                <i class="bi bi-linkedin"></i>
+                                                <i class="bi bi-pinterest"></i>
+                                                <i class="bi bi-instagram"></i>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="especialista">
+                                            <div class="imagenEspecialista"><img src="assets/team2.jpg" alt=""></div>
+                                            <h5>John Suen</h5>
+                                            <p class="especialistap">Caretaker</p>
+                                            <p class="descripcionEspecialista">Pellentesque turpis lectus, placerat a
+                                                ultricies a, posuere a nibh imperdiet interdum.</p>
+                                            <div class="redesEspecialistas">
+                                                <i class="bi bi-twitter"></i>
+                                                <i class="bi bi-facebook"></i>
+                                                <i class="bi bi-linkedin"></i>
+                                                <i class="bi bi-pinterest"></i>
+                                                <i class="bi bi-instagram"></i>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="especialista">
+                                            <div class="imagenEspecialista"><img src="assets/team3.jpg" alt=""></div>
+                                            <h5>Nancy May</h5>
+                                            <p class="especialistap">Specialist</p>
+                                            <p class="descripcionEspecialista">Pellentesque turpis lectus, placerat a
+                                                ultricies a, posuere a nibh imperdiet interdum.</p>
+                                            <div class="redesEspecialistas">
+                                                <i class="bi bi-twitter"></i>
+                                                <i class="bi bi-facebook"></i>
+                                                <i class="bi bi-linkedin"></i>
+                                                <i class="bi bi-pinterest"></i>
+                                                <i class="bi bi-instagram"></i>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="especialista">
+                                            <div class="imagenEspecialista"><img src="assets/team4.jpg" alt=""></div>
+                                            <h5>Amelie Plin</h5>
+                                            <p class="especialistap">Veterinarian</p>
+                                            <p class="descripcionEspecialista">Pellentesque turpis lectus, placerat a
+                                                ultricies a, posuere a nibh imperdiet interdum.</p>
+                                            <div class="redesEspecialistas">
+                                                <i class="bi bi-twitter"></i>
+                                                <i class="bi bi-facebook"></i>
+                                                <i class="bi bi-linkedin"></i>
+                                                <i class="bi bi-pinterest"></i>
+                                                <i class="bi bi-instagram"></i>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Banner que dicen nuestros clientes -->
+
+
+        <section id="seccion5" class="seccion5">
+
+            <div class="banner5">
+
+                <div class="contenidoBannerQueDicenNuestrosClientes">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>WHAT OUR CLIENTS SAYS</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- SLIDER UNO -->
+
+                    <div class="sliderBannerQueDicenNuestrosClientes">
+
+                        <div class="sliderInnerBannerQueDicenNuestrosClientes">
+
+                            <div class="sliderCambienteBannerQueDicenNuestrosClientes">
+
+                                <div><img class="imagenOpiniones"
+                                        src="https://www.ingridkuhn.com/themes/happypaws/img/testimonial1.jpg" alt="">
+                                </div>
+
+                                <div class="quote-box">
+
+                                    <img src="assets/comillas.png" alt="comillas" class="quote-icon">
+                                    <span>Laudantium totam tempore optio doloremque aut eius animi. Suspendisse a
+                                        elementum ante. Nunc aliquet tincidunt quam, non egestas arcu imperdiet
+                                        et.</span>
+
+                                </div>
+
+                                <div class="nombreOpinatario">
+                                    <p> — Joana Vilken, TV Star</p>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- SLIDER DOS -->
+
+
+
+
+                            <div class="sliderCambienteBannerQueDicenNuestrosClientes">
+
+                                <div><img class="imagenOpiniones"
+                                        src="https://www.ingridkuhn.com/themes/happypaws/img/testimonial2.jpg" alt="">
+                                </div>
+
+                                <div class="quote-box">
+
+                                    <img src="assets/comillas.png" alt="comillas" class="quote-icon">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolores
+                                        accusantium animi, ullam excepturi tenetur illo pariatur tempore! Odio totam,
+                                        est dolore saepe laborum eligendi. Iure sed sit nostrum molestiae.</span>
+
+                                </div>
+
+                                <div class="nombreOpinatario">
+                                    <p> — John Cassady, Austrounat</p>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- SLIDER TRES -->
+
+
+
+
+
+                            <div class="sliderCambienteBannerQueDicenNuestrosClientes">
+
+                                <div><img class="imagenOpiniones"
+                                        src="https://www.ingridkuhn.com/themes/happypaws/img/testimonial3.jpg" alt="">
+                                </div>
+
+                                <div class="quote-box">
+
+                                    <img src="assets/comillas.png" alt="comillas" class="quote-icon">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolores
+                                        accusantium animi, ullam excepturi tenetur illo pariatur tempore! Odio totam,
+                                        est dolore saepe laborum eligendi. Iure sed sit nostrum molestiae.</span>
+
+                                </div>
+
+                                <div class="nombreOpinatario">
+                                    <p> — Maria Silveria, model</p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <!-- FIN DE LOS SLIDERS -->
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="puntitosContenidoBannerQueDicenNuestrosClientes">
+
+                        <div class="punto" id="">
+                            <div class=""></div>
+                        </div>
+                        <div class="punto" id="">
+                            <div class=""></div>
+                        </div>
+                        <div class="punto" id="">
+                            <div class=""></div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <!-- FIN DE LOS COMNTARIOS -->
+
+
+        <!-- SECCION NUESTROS PRECIOS -->
+
+        <section id="seccion6" class="seccion6">
+
+            <div class="banner6">
+
+                <div class="contenidoBannerNuestrosPrecios">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>OUR PRICES</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="contenedoresDePrecio">
+
+                        <!-- PLAN UNO -->
+
+                        <div class="plan">
+
+                            <div class="tipo">
+                                <h4>Basic</h4>
+                            </div>
+                            <div class="cajaPrecio">
+                                <div class="precio"><span class="dolares">$49</span><span class="creos">.00</span></div>
+                                <p>per moth</p>
+                                <div></div>
+                            </div>
+                            <div class="contenidoPlan">
+                                <div class="contenedorp">
+
+                                    <p>2 Dogs wals</p>
+                                    <p>1 vet Visit</p>
+                                    <p>1 Pet Spa</p>
+                                    <p>10 Vet Calls</p>
+                                    <p>Free Support</p>
+
+                                </div>
+
+                                <div class="bottonPlan"><button class="slide_b">sing up now</button></div>
+                            </div>
+
+                        </div>
+
+                        <!-- PLAN DOS ESPECIAL-->
+
+                        <!-- PLAN DOS ESPECIAL-->
+                        <div class="plan advanced popular">
+                            <span class="ribbon-text">POPULAR</span>
+                            <span class="ribbon-triangle-left"></span>
+                            <span class="ribbon-triangle-right"></span>
+
+                            <div class="tipo tipoAdvanced">
+                                <h4>Advanced</h4>
+                            </div>
+                            <div class="cajaPrecio">
+                                <div><span class="dolares">$99</span><span class="creos">.00</span></div>
+                                <p>per month</p>
+                                <div></div>
+                            </div>
+                            <div class="contenidoPlan">
+                                <div class="contenedorp">
+                                    <p>5 Dog walks</p>
+                                    <p>3 Vet Visits</p>
+                                    <p>5 Pet Spa</p>
+                                    <p>20 Vet Calls</p>
+                                    <p>Free Support</p>
+                                </div>
+                                <div class="bottonPlan"><button class="slide_b">sign up now</button></div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- PLAN TRES -->
+
+                        <div class="plan">
+
+                            <div class="tipo">
+                                <h4>Professional</h4>
+                            </div>
+                            <div class="cajaPrecio">
+                                <div><span class="dolares">$199</span><span class="creos">.00</span></div>
+                                <p>per moth</p>
+                                <div></div>
+                            </div>
+                            <div class="contenidoPlan">
+                                <div class="contenedorp">
+                                    <p>10 Dogs wals</p>
+                                    <p>5 Vet Visit</p>
+                                    <p>10 Pet Spa</p>
+                                    <p>40 Vet Calls</p>
+                                    <p>Free Support</p>
+                                </div>
+
+                                <div class="bottonPlan"><button class="slide_b">sing up now</button></div>
+                            </div>
+
+                        </div>
+
+                        <!-- PLAN CUATRO -->
+
+                        <div class="plan">
+
+                            <div class="tipo">
+                                <h4>Extreme</h4>
+                            </div>
+                            <div class="cajaPrecio">
+                                <div><span class="dolares">$299</span><span class="creos">.00</span></div>
+                                <p>per moth</p>
+                                <div></div>
+                            </div>
+                            <div class="contenidoPlan">
+                                <div class="contenedorp">
+
+                                    <p><span class="strong">Unlimited</span> Dogs wals</p>
+                                    <p><span class="strong">Unlimited</span> Visit</p>
+                                    <p><span class="strong">Unlimited</span> Pet Spa</p>
+                                    <p><span class="strong">Unlimited</span> Vet Calls</p>
+                                    <p><span class="strong">Unlimited</span> Free Support</p>
+
+                                </div>
+
+                                <div class="bottonPlan"><button class="slide_b">sing up now</button></div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+        <!-- BANNER PERRITOS -->
+
+        <section id="call-to-action" class="sectionPerritos">
+            <div class="bannerHuesitos content">
+
+                <!-- Fondo con huesos y perro -->
+                <div class="fondo">
+                    <div class="layer bones-small"></div>
+                    <div class="layer dog-large"></div>
+                    <div class="layer bones-large"></div>
+                </div>
+
+                <!-- Contenido de llamada a la acción -->
+                <div class="containido">
+                    <h4>Discover our Pet Shop and Services</h4>
+                    <p>Contact or learn more about us and make your pet happy in your visit to our Shop and discover all
+                        our amazing products and services to make your pet very healthy and active with a lot of energy
+                        this winter lorem ipsum ipsuet dolor.</p>
+                    <div class="botonesHuesito"><button class="slide_b">sing up now</button><button class="slide_b">sing
+                            up now</button></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- FIN DEL BANNER PERRITOS -->
+
+
+        <section id="seccionGalwery" class="seccionGaleria">
+
+            <div class="banner8">
+
+                <div class="contenidoBannerNuestrosPrecios">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>OUR GALLERY</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nevegacionGaleria"><a onclick="filterSelection('all')">ALL</a><img
+                            src="assets/linea.png" alt=""><a onclick="filterSelection('dogscat')">DOGS
+                            AND CATS</a><img src="assets/linea.png" alt=""><a onclick="filterSelection('rest')">OTHER
+                            PETS</a></div>
+
+                    <div class="galeria">
+
+
+
+
+
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery1.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery6.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery3.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery4.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery5.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery2.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery7.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery8.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery9.jpg"
+                                alt="Imagen de ejemplo">
+
+                            <div class="overlay"></div>
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery10.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover rest">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery11.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                        <div class="imagen-con-hover dogscat">
+
+                            <img src="https://www.ingridkuhn.com/themes/happypaws/img/gallery12.jpg"
+                                alt="Imagen de ejemplo">
+
+
+                            <div class="overlay"></div>
+
+
+                            <i class="bi bi-arrows-angle-expand icono"></i>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="seccion8" class="seccionBannerOfertas">
+
+            <div class="bannerOfertas">
+
+                <div class="contenidoBannerOfertas">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>WHAT OUR OFFERS ARE</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER UNO -->
+
+                    <div class="centrador">
+
+                        <div class="sliderBannerOfertas">
+                            <div class="sliderInnerBannerOfertas">
+                                <div class="sliderElementoBannerOfertas">
+                                    <div class="fotoOferta"><img class="imagenOfertas"
+                                            src="https://www.ingridkuhn.com/themes/happypaws/img/offer1.png" alt="">
+                                    </div>
+                                    <div class="contenedorOferta">
+    
+                                        <div class="tituloOferta">
+                                            <h4>Vet Services: </h4><span>20% OFF</span>
+                                        </div>
+                                        <div class="descripcionOferta">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nemo,
+                                                ipsa, nulla doloremque suscipit dicta quae eius doloribus distinctio dolorum
+                                                non accusamus quod facilis nam natus harum, eveniet quaerat debitis.</p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <!-- SLIDER DOS -->
+                                <div class="sliderElementoBannerOfertas">
+                                    <div class="imagenOfertas"><img class="imagenOfertas"
+                                            src="https://www.ingridkuhn.com/themes/happypaws/img/offer2.png" alt="">
+                                    </div>
+                                    <div class="contenedorOferta">
+    
+                                        <div class="tituloOferta">
+                                            <h4>Pet schoool: </h4><span>30% OFF</span>
+                                        </div>
+                                        <div class="descripcionOferta">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quidem ducimus
+                                                reiciendis aperiam commodi neque sed, fugiat doloremque, deserunt voluptatem
+                                                sint, veniam qui magni! Vitae autem ducimus facilis quibusdam ratione?</p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <!-- SLIDER TRES -->
+                                <div class="sliderElementoBannerOfertas">
+                                    <div><img class="imagenOfertas"
+                                            src="https://www.ingridkuhn.com/themes/happypaws/img/offer3.png" alt="">
+                                    </div>
+    
+                                    <div class="contenedorOferta">
+    
+                                        <div class="tituloOferta">
+                                            <h4>Quality Pet Foods: </h4><span>40% OFF</span>
+                                        </div>
+                                        <div class="descripcionOferta">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid nisi ex
+                                                voluptas dicta consectetur tenetur illo labore corrupti cupiditate quo
+                                                laboriosam molestiae laudantium blanditiis facilis sit, atque eos natus.</p>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+                    <div class="puntitosBannerOfertas">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--  Seccion Adopcion -->
+
+
+        <section id="seccion9" class="seccion9">
+
+            <div class="banner9">
+
+                <div class="contenidoBannerAdopcion">
+
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>ADOPTION</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedorPrincipalAdopcion">
+
+                        <div class="contenidoPrinciplaAdopcion">
+
+                            <div class="textoConFotoDescirptivo">
+
+                                <div class="fotoDescripcion"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adopt.jpg" alt=""></div>
+    
+                                <div class="texoDescriptivo">
+                                    <h3>Looking to Adopt an Animal?</h3>
+                                    <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ul tricies, vest ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non metus ali quam eros accumsan mollis eget vitaeusm. Aliquam erat volutpat phasellus ac sodales felis tiam non metus ali quam eros accumsan mollis eget vitae tel lusm. Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit. Aliquam erat volutpat phasellus ac sodales felis tiam non metus ali quam eros accumsan mollis eget vi tae.</p>
+                                </div>
+    
+                            </div>
+
+                            <div class="desplegableSlider">
+
+                                <div class="desplegablesAdopcion">
+                                    <h4>Frequent Questions</h4>
+
+                                    <div class="contededoresDesplegables">
+                                        <div class="contenedor">
+                                            <div class="tituloContenedorDesplegable">
+                                                Is account registration requiered? <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                            <div class="contentenidoDesplegable">
+                                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="contenedor">
+                                            <div class="tituloContenedorDesplegable">
+                                                How Do I Apply? <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                            <div class="contentenidoDesplegable">
+                                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="contenedor">
+                                            <div class="tituloContenedorDesplegable">
+                                                What docuemts Do I need to Adopt? <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                            <div class="contentenidoDesplegable">
+                                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contenedor">
+                                            <div class="tituloContenedorDesplegable">
+                                                How to choose an Pet? <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                            <div class="contentenidoDesplegable">
+                                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contenedor">
+                                            <div class="tituloContenedorDesplegable">
+                                                Are the animals neutered? <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                            <div class="contentenidoDesplegable">
+                                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.</p>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="sliderAdopcion">
+                                    <h4>Find a New Friend</h4>
+
+                                    <div class="contenedor-slider-mascotas">
+                                        <button class="boton-slider-mascotas anterior" onclick="moverSlideMascotas(-1)">❮</button>
+                                        <div class="envoltorio-slider-mascotas">
+                                            <div class="slider-mascotas">
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption1.jpg" alt=""></div>
+                                                    <h6>Lilica</h6>
+                                                    <p><strong>Gender:</strong> Famale</p>
+                                                    <p><strong>Neutered:</strong> Yes</p>
+                                                    <p><strong>Age:</strong> 5 years</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>
+                                                </div>
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption2.jpg" alt=""></div>
+                                                    <h6>Charlie</h6>
+                                                    <p><strong>Gender:</strong> Male</p>
+                                                    <p><strong>Neutered:</strong> No</p>
+                                                    <p><strong>Age:</strong> 4 months</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>
+                                                </div>
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption3.jpg" alt=""></div>
+                                                    <h6>LUCKY</h6>
+                                                    <p><strong>Gender:</strong> Male</p>
+                                                    <p><strong>Neutered:</strong> Yes</p>
+                                                    <p><strong>Age:</strong> 1 year</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>
+                                                </div>
+                                                    
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption4.jpg" alt=""></div>
+                                                    <h6>MADALENE</h6>
+                                                    <p><strong>Gender:</strong> Female</p>
+                                                    <p><strong>Neutered:</strong> No</p>
+                                                    <p><strong>Age:</strong> 2 years</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>
+                                                </div>
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption5.jpg" alt=""></div>
+                                                    <h6>JOANE</h6>
+                                                    <p><strong>Gender:</strong> Female</p>
+                                                    <p><strong>Neutered:</strong> No</p>
+                                                    <p><strong>Age:</strong> 5 years</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>
+                                                </div>
+                                                <div class="item-mascota">
+                                                    <div class="imagenMascota"><img src="https://www.ingridkuhn.com/themes/happypaws/img/adoption6.jpg" alt=""></div>
+                                                    <h6>CUTESTY</h6>
+                                                    <p><strong>Gender:</strong> Male</p>
+                                                    <p><strong>Neutered:</strong> Yes</p>
+                                                    <p><strong>Age:</strong> 2 years</p>
+                                                    <div class="bottonAdopcion"><button class="slide_b">sing up now</button></div>                                       </div>
+                                            </div>
+                                        </div>
+                                        <button class="boton-slider-mascotas siguiente" onclick="moverSlideMascotas(1)">❯</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+    
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+   <!-- SECCION BRANDS-->
+
+        <section id="seccion10" class="seccion10">
+            <div class="banner10">
+                <div class="contenidoBannerBrands">
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>BRANDS WE WORK WITH</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER UNO -->
+                    <div class="brands">
+
+                        <div><img src="https://www.ingridkuhn.com/themes/happypaws/img/client1.png" alt=""></div>
+                        <div><img src="https://www.ingridkuhn.com/themes/happypaws/img/client2.png" alt=""></div>
+                        <div><img src="https://www.ingridkuhn.com/themes/happypaws/img/client3.png" alt=""></div>
+                        <div><img src="https://www.ingridkuhn.com/themes/happypaws/img/client4.png" alt=""></div>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCION EN CONTACTO-->
+
+        <section id="seccion11" class="seccion11">
+            <div class="banner11">
+                <div class="contenidoBannerEnContacto">
+                    <div class="titulo">
+                        <div class="h2bannerUno">
+                            <h2>GET IN TOUCH</h2>
+                            <hr class="hr-punteado">
+                            <div class="imagenSuperpuestaAlSeparadorDos">
+                                <img class="huella" src="assets/huellaBannerUno.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER UNO -->
+                    <div class="contenedorEnContacto">
+
+                        <div class="informationLocationTime">
+
+                            <div class="informacion">
+                                <h4>Information</h4>
+                                <p>Contact for additional information:</p>
+                                <i class="bi bi-envelope-fill"><p class="email"> petshop@city.com </p><p class="pinfo"> or call us</p></i>
+                                <i class="bi bi-telephone-fill"><p class="pinfo"> +1 (123) 456 7890</p></i>
+                            </div>
+                            <div class="locationYTime">
+                            <h4>Location & Time</h4>
+                            <i class="bi bi-geo-alt-fill"><p class="pinfo">We are located at Pet City, 304.</p></i>
+                            <i class="bi bi-clock"><p class="pinfo">Open from 9 a.m to 10 p.m on weekdays and from 9 a.m to 2 p.m in weekends.</p></i>
+                            </div>
+
+                        </div>
+
+                        <div class="formularioInformacion">
+
+                            <form action="">
+                                <input type="" placeholder="Name">
+                                
+                                <input type="" placeholder="Email">
+                                
+                                <input type="" placeholder="Subject">
+                           
+                                <textarea name="" id="" placeholder="Enter your messege"></textarea>
+                              
+                                
+                                <div>
+                                    <button class="slide_b">send messege</button> </div>                
+                            </form>
+
+                        </div>
+
+                        
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="bannerMapa">
+    
+                <div class="mapa" id="mapa"></div>
+    
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="contenidoBannerDos">
+
+                <div class="iconos_img"><img src="assets/facebook.png" alt="facebook"></div>
+                <div class="iconos_img"><img src="assets/twitter.png" alt="twitter"></div>
+                <div class="iconos_img"><img src="assets/google-plus.png" alt="google+"></div>
+                <div class="iconos_img"><img src="assets/linkedin.png" alt="linkedin"></div>
+                <div class="iconos_img"><img src="assets/flickr.png" alt="flickr"></div>
+                <div class="iconos_img"><img src="assets/tumblr.png" alt="tumblr"></div>
+                <div class="iconos_img"><img src="assets/instagram.png" alt="instagram"></div>
+    
+            </div>
+
+            <div class="pFooteer">
+
+                <p>COPYRIGHT © 2015-2018 Ingrid Kuhn</p>
+
+            </div>
+
+        </footer>
+    
+
+    </main>
+
+
+   
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+</script>
+
+
+    <script src="scrtipt.js"></script>
+
+</body>
+
+</html>
